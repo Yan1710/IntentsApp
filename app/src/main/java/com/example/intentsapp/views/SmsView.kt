@@ -1,5 +1,6 @@
 package com.example.intentsapp.views
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import androidx.compose.foundation.layout.Column
@@ -46,7 +47,7 @@ fun SmsView(){
 
 
         OutlinedTextField(value = mesagge, onValueChange = { mesagge = it }, label = {
-            Text(text = "Number")
+            Text(text = "Mesagge")
         },
             modifier = Modifier
                 .fillMaxWidth()
